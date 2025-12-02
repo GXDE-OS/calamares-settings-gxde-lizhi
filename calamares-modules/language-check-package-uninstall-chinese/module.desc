@@ -1,0 +1,6 @@
+---
+type: "job"
+name: "language-check-package-uninstall-chinese"
+interface: "process"
+script:
+    - /usr/sbin/language-check-package-corrected.sh
