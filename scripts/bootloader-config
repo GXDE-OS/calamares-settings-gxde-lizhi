@@ -25,6 +25,12 @@ if [[ $kerNum == 2 ]]; then
     DEBIAN_FRONTEND=noninteractive chroot $CHROOT apt-get -y autopurge $unstallVmlinuzPkgName -y
 fi
 
+if [[ $LANG != "zh_CN.UTF-8" ]] && [[ $LANG != "zh_HK.UTF-8" ]] && [[ $LANG != "zh_TW.UTF-8" ]]; then
+    DEBIAN_FRONTEND=noninteractive chroot $CHROOT apt-get -y autopurge spark-store
+    DEBIAN_FRONTEND=noninteractive chroot $CHROOT apt-get -y install dde-store
+    DEBIAN_FRONTEND=noninteractive chroot $CHROOT apt-get -y install aptss
+fi
+
 echo "Running bootloader-config..."
 
 if [ -d /sys/firmware/efi/efivars ]; then

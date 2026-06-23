@@ -1,4 +1,4 @@
-calamares-settings-gxde (13.0.5) UNRELEASED; urgency=medium
+calamares-settings-gxde (13.0.6) UNRELEASED; urgency=medium
 
   * 修复轮播图显示不全的问题
   * 支持 lizhi
@@ -6,8 +6,9 @@ calamares-settings-gxde (13.0.5) UNRELEASED; urgency=medium
   * 修改轮播图文案
   * 无法支持在非中文地区安装 dde-store 
   * 新增 loong13.debian.net 支持
+  * 在非简体中文/繁体中文系统安装dde-store而非星火商店
 
- -- gfdgd_xi <3025613752@qq.com>  Tue, 09 Jun 2026 21:57:37 +0800
+ -- gfdgd_xi <3025613752@qq.com>  Wed, 24 Jun 2026 07:36:55 +0800
 
 calamares-settings-gxde (12.0.9-1) unstable; urgency=medium
 
