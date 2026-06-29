@@ -40,7 +40,7 @@ Presentation
         Image {
             id: background_1
             source: "slide_1.png"
-            width: 1000; height: 650
+            anchors.fill: parent
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
         }
@@ -50,7 +50,7 @@ Presentation
         Image {
             id: background_2
             source: "slide_2.png"
-            width: 1000; height: 650
+            anchors.fill: parent
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
         }
@@ -60,7 +60,7 @@ Presentation
         Image {
             id: background_3
             source: "slide_3.png"
-            width: 1000; height: 650
+            anchors.fill: parent
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
         }
@@ -70,7 +70,7 @@ Presentation
         Image {
             id: background_4
             source: "slide_4.png"
-            width: 1000; height: 650
+            anchors.fill: parent
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
         }
@@ -80,7 +80,7 @@ Presentation
         Image {
             id: background_5
             source: "slide_5.png"
-            width: 1000; height: 650
+            anchors.fill: parent
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
         }
