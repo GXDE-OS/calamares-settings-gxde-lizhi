@@ -42,6 +42,16 @@ else
     DEBIAN_FRONTEND=noninteractive chroot $CHROOT apt-get -y install grub-pc
 fi
 
+# 盘古设备重新生成设备树
+# 如果有安装盘古的配置包，则重新配置以生成正确的设备树
+if [[ -f /var/lib/dpkg/info/gxde-pangu-m900-config.list ]]; then
+    chroot $CHROOT dpkg-reconfigure gxde-pangu-m900-config
+    # 拷贝 grub.cfg 以便正确引导系统
+    if [[ ! -f $CHROOT/boot/efi/boot/grub.cfg ]]; then
+        cp $CHROOT/boot/efi/gxde/grub.cfg $CHROOT/boot/efi/boot/grub.cfg -v
+    fi
+fi
+
 # Re-enable os-prober:
 sed -i "s/#GRUB_DISABLE_OS_PROBER=false/# OS_PROBER re-enabled by GXDE Calamares installation:\nGRUB_DISABLE_OS_PROBER=false/g" $CHROOT/etc/default/grub
 if [[ -f $CHROOT/usr/sbin/update-grub ]]; then
