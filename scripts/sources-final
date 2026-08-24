@@ -24,18 +24,18 @@ EOF
 else
     cat << EOF > $CHROOT/etc/apt/sources.list
 # See https://wiki.debian.org/SourcesList for more information.
-deb https://mirrors.cernet.edu.cn/debian $RELEASE main contrib non-free non-free-firmware
-#deb-src https://mirrors.cernet.edu.cn/debian $RELEASE main contrib non-free non-free-firmware
+deb https://mirrors.aliyun.com/debian $RELEASE main contrib non-free non-free-firmware
+#deb-src https://mirrors.aliyun.com/debian $RELEASE main contrib non-free non-free-firmware
 
-deb https://tuna.mirrors.cernet.edu.cn//debian $RELEASE-updates main contrib non-free non-free-firmware
-#deb-src https://tuna.mirrors.cernet.edu.cn//debian $RELEASE-updates main contrib non-free non-free-firmware
+deb https://mirrors.aliyun.com/debian $RELEASE-updates main contrib non-free non-free-firmware
+#deb-src https://mirrors.aliyun.com/debian $RELEASE-updates main contrib non-free non-free-firmware
 
-deb https://mirrors.cernet.edu.cn/debian-security/ $RELEASE-security main contrib non-free non-free-firmware
-#deb-src https://mirrors.cernet.edu.cn/debian-security/ $RELEASE-security main contrib non-free non-free-firmware
+deb https://mirrors.aliyun.com/debian-security/ $RELEASE-security main contrib non-free non-free-firmware
+#deb-src https://mirrors.aliyun.com/debian-security/ $RELEASE-security main contrib non-free non-free-firmware
 
 # Backports allow you to install newer versions of software made available for this release
-deb https://mirrors.cernet.edu.cn/debian $RELEASE-backports main contrib non-free non-free-firmware
-#deb-src https://mirrors.cernet.edu.cn/debian $RELEASE-backports main contrib non-free non-free-firmware
+deb https://mirrors.aliyun.com/debian $RELEASE-backports main contrib non-free non-free-firmware
+#deb-src https://mirrors.aliyun.com/debian $RELEASE-backports main contrib non-free non-free-firmware
 EOF
 fi
 exit 0
