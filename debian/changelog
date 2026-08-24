@@ -1,4 +1,4 @@
-calamares-settings-gxde (13.0.9) UNRELEASED; urgency=medium
+calamares-settings-gxde (13.0.10) UNRELEASED; urgency=medium
 
   * 修复轮播图显示不全的问题
   * 支持 lizhi
@@ -10,8 +10,9 @@ calamares-settings-gxde (13.0.9) UNRELEASED; urgency=medium
   * 修复安装器轮播图被裁剪的问题
   * 修复非 loong64 安装后源为 debian13 loong64 的问题
   * 盘古芯片特别适配
+  * 使用 tuna 作为默认源
 
- -- gfdgd_xi <3025613752@qq.com>  Thu, 06 Aug 2026 18:21:16 +0800
+ -- gfdgd_xi <3025613752@qq.com>  Mon, 24 Aug 2026 17:59:27 +0800
 
 calamares-settings-gxde (12.0.9-1) unstable; urgency=medium
 
