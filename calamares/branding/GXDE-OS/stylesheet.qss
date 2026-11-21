@@ -386,3 +386,19 @@ QProgressBar::chunk {
 QWidget#confirmQuitOverlay {
   background: transparent;
 }
+
+/*** Installation (slideshow) page: no white frame around the slides,
+ *   the wallpaper shows through. */
+
+#execTabWidget {
+  background: transparent;
+}
+
+#execTabWidget::pane {
+  border: none;
+  background: transparent;
+}
+
+#execTabWidget > QWidget > QWidget {
+  background: transparent;
+}
