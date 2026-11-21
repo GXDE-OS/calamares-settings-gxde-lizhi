@@ -432,3 +432,13 @@ QLineEdit[state="error"] {
   border: 1px solid rgba(230, 67, 64, 0.9);
   background-color: rgba(230, 67, 64, 0.08);
 }
+
+/*** Translucent error bubble under a line edit. */
+
+QLabel#fieldErrorTip {
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 12px;
+  color: #ffffff;
+  padding: 3px 12px;
+  font-size: 12px;
+}
