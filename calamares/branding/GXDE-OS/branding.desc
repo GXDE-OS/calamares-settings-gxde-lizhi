@@ -2,7 +2,8 @@
 componentName:   GXDE-OS
 welcomeStyleCalamares: true
 welcomeExpandingLogo: true
-windowExpanding: normal
+# deepin-installer 风格全屏界面（需要配合支持全屏外壳的 calamares）
+windowExpanding: fullscreen
 windowSize: 800px,520px
 windowPlacement: center
 
@@ -18,13 +19,14 @@ strings:
     knownIssuesUrl:      https://gitee.com/organizations/GXDE-OS/issues
     donateUrl:           https://gitee.com/GXDE-OS#%E8%AF%B7%E4%BD%9C%E8%80%85%E5%96%9D%E6%9D%AF%E8%8C%B6
 
-sidebar: widget
-navigation: widget
+# deepin-installer 风格全屏界面使用自带的底部导航与圆点页码指示器
+sidebar: none
+navigation: none
 
 images:
     productLogo:         "gxde-logo.svg"
     productIcon:         "gxde-logo.svg"
-    # productWallpaper:  "wallpaper.png"
+    productWallpaper:    "wallpaper.jpg"
 
 slideshow:               "show.qml"
 
