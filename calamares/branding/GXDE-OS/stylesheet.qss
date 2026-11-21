@@ -125,7 +125,7 @@ QPushButton:disabled {
 QLineEdit {
   border: 1px solid transparent;
   border-radius: 4px;
-  padding: 2px 8px;
+  padding: 2px 34px;
   background-color: rgba(255, 255, 255, 0.1);
   outline: none;
   color: #dadada;
@@ -421,6 +421,9 @@ QToolButton#userAvatarButton {
 
 QLineEdit {
   min-height: 30px;
+  /* room for the leading field icon and the trailing status icon */
+  padding-left: 34px;
+  padding-right: 34px;
 }
 
 QLineEdit[state="ok"] {
@@ -436,7 +439,7 @@ QLineEdit[state="error"] {
 /*** Translucent error bubble under a line edit. */
 
 QLabel#fieldErrorTip {
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(230, 67, 64, 0.85);
   border-radius: 12px;
   color: #ffffff;
   padding: 3px 12px;
