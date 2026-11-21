@@ -387,6 +387,18 @@ QWidget#confirmQuitOverlay {
   background: transparent;
 }
 
+/*** In-page overlays (avatar picker): dim the page underneath. */
+
+QWidget#avatarOverlay {
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 4px;
+}
+
+QWidget#avatarOverlay QListWidget {
+  background: transparent;
+  border: none;
+}
+
 /*** Installation (slideshow) page: no white frame around the slides,
  *   the wallpaper shows through. */
 
