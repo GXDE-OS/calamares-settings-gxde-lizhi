@@ -409,3 +409,26 @@ QWidget#confirmQuitOverlay {
 QListView#languageList {
   font-size: 14pt;
 }
+
+/*** User page: the avatar button has no frame of its own, and the
+ *   line edits signal ok / error with colored borders (a glow effect
+ *   is applied in code). */
+
+QToolButton#userAvatarButton {
+  border: none;
+  background: transparent;
+}
+
+QLineEdit {
+  min-height: 30px;
+}
+
+QLineEdit[state="ok"] {
+  border: 1px solid rgba(76, 175, 80, 0.8);
+  background-color: rgba(76, 175, 80, 0.08);
+}
+
+QLineEdit[state="error"] {
+  border: 1px solid rgba(230, 67, 64, 0.9);
+  background-color: rgba(230, 67, 64, 0.08);
+}
