@@ -10,7 +10,7 @@ Vcs-Git: https://gitee.com/GXDE-OS/calamares-settings-gxde
 
 Package: calamares-settings-gxde
 Architecture: all
-Depends: calamares,
+Depends: calamares-gxde,
          cryptsetup,
          keyutils,
          pkexec,
